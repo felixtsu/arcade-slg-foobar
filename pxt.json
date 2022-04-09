@@ -14,7 +14,8 @@
         "README.md",
         "assets.json",
         "tilemap.g.jres",
-        "tilemap.g.ts"
+        "tilemap.g.ts",
+        "op_context.ts"
     ],
     "testFiles": [
         "test.ts"
