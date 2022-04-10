@@ -6,7 +6,8 @@
         "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3",
         "color-coded-tilemap": "*",
         "tilemaps": "github:microsoft/pxt-tilemaps#v1.12.0",
-        "arcade-shader": "github:riknoll/arcade-shader#d2a2572906fdb68ff429f337e30606b069e688ea"
+        "arcade-shader": "github:riknoll/arcade-shader#d2a2572906fdb68ff429f337e30606b069e688ea",
+        "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.1"
     },
     "files": [
         "main.blocks",

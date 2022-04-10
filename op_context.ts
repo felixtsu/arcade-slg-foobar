@@ -8,12 +8,19 @@ namespace operation_context {
 
     let actingCharacter:Sprite = null
     let locationCandidates:tiles.Location[] = []
+    let locationCandidateShaders: Sprite []= []
 
     let op:Operation 
+
+    export function destroyCandidateShaders() {
+        locationCandidateShaders.forEach(sprite => sprite.destroy())
+        locationCandidateShaders = []
+    }
 
     export function clearContext() {
         actingCharacter = null
         locationCandidates = []
+        destroyCandidateShaders()
         op = null;
     }
 
@@ -23,6 +30,10 @@ namespace operation_context {
 
     export function addLocationCandidate(candidate:tiles.Location) {
         locationCandidates.push(candidate)
+    }
+
+    export function addLocationCandidatesShader(shader:Sprite) {
+        locationCandidateShaders.push(shader)
     }
 
     export function validLocation(location:tiles.Location) {
